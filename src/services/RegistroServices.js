@@ -4,7 +4,7 @@ const URL_API = `http://localhost:3000/registro`
 
 export const listarRegistro = async () => {
   const result = await axios.get(URL_API);
-  return result
+  return result.data
 }
 
 export const mostrarRegistro = async (id) => {
